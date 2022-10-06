@@ -1,0 +1,75 @@
+html {
+    height: 100%;
+}
+body {
+    margin: 0 0 0 0;
+    height: 100%;
+}
+.header {
+    background-color: green;
+    text-align: center;
+    margin: 0 0 0 0;
+    height: 50px;
+    color: white;
+    line-height: 50px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    display: flex;
+    margin: 0 300px 0 300px;
+}
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0 0 20px;
+    text-align: justify;
+}
+.text::selection {
+    background-color: green;
+    color: white;
+}
+.text::first-letter {
+    color: Red;
+    font-size: larger;
+}
+.links {
+    background-color: red;
+    flex: 0 0 160px;
+    width: 300px;
+    min-height: calc(100vh - 70px);
+}
+.list a {
+    color: white;
+}
+a:hover {
+    background-color: green;
+}
+.list {
+    list-style-type: none;
+    font-family: sans-serif;
+    font-size: smaller;
+    padding: 0;
+    margin: 20px 30px 0 30px;
+}
+.list li {
+    margin-bottom: 13px;
+}
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 20px;
+    line-height: 20px;
+    font-size: smaller;
+}
+
+@media (max-width:1024px) {
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+    .text {
+        padding-right: 20px;
+    }
+}
